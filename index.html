@@ -26,7 +26,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="cart">🛒</div>
+      <div class="cart">🛒 (0)</div>
     </div>
   </header>
 
@@ -39,34 +39,109 @@
     </div>
   </section>
 
-  <!-- Products -->
+  <!-- Products Section -->
   <section id="products" class="products">
     <div class="container">
       <h2>Featured Products</h2>
       <div class="product-grid">
+
+        <!-- 12 Product Cards -->
         <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height: 280px" alt="Wireless Headphones">
+          <img src="https://i.pinimg.com/736x/6e/4e/c7/6e4ec7c3423da88520dd758f38751937.jpg" alt="Wireless Headphones">
           <h3>Wireless Headphones</h3>
           <p class="price">$99.99 <span class="old-price">$129.99</span></p>
-          <button>Add to cart</button>
+          <button onclick="addToCart()">Add to cart</button>
           <button>Buy now</button>
         </div>
 
         <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height: 280px" alt="Smart Watch">
+          <img src="https://i.pinimg.com/736x/d5/38/d1/d538d17b7b6ea2130ceb006c4e117ed8.jpg" alt="Smart Watch">
           <h3>Smart Watch</h3>
           <p class="price">$149.99 <span class="old-price">$179.99</span></p>
-          <button>Add to cart</button>
+          <button onclick="addToCart()">Add to cart</button>
           <button>Buy now</button>
         </div>
 
         <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height: 280px; width: 280px" alt="Bluetooth Speaker">
+          <img src="https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Qmx1ZXRvb3RoJTIwU3BlYWtlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Bluetooth Speaker">
           <h3>Bluetooth Speaker</h3>
           <p class="price">$59.99 <span class="old-price">$89.99</span></p>
-          <button>Add to cart</button>
+          <button onclick="addToCart()">Add to cart</button>
           <button>Buy now</button>
         </div>
+
+        <div class="product-card">
+          <img src="https://media.istockphoto.com/id/153065264/photo/computer-keyboard-with-clipping-path.webp?a=1&b=1&s=612x612&w=0&k=20&c=wGLrPu5r7aB4Cs6-dlsXVxZFP54Fmxll-HUNF_0vnN4=" alt="Mechanical Keyboard">
+          <h3>Mechanical Keyboard</h3>
+          <p class="price">$79.99 <span class="old-price">$99.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/44/25/19/4425199bc98a240b6c82a6c6eadeab25.jpg" alt="Wireless Earbuds">
+          <h3>Wireless Earbuds</h3>
+          <p class="price">$49.99 <span class="old-price">$69.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/d8/58/36/d858362d6f9fa0b4a98bdade864f8cb5.jpg" alt="Action Camera">
+          <h3>Action Camera</h3>
+          <p class="price">$199.99 <span class="old-price">$249.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/c5/c1/69/c5c1691d093e20cd57700d5d6469d040.jpg" alt="LED Monitor">
+          <h3>LED Monitor</h3>
+          <p class="price">$179.99 <span class="old-price">$229.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/07/9a/ac/079aacbe7ee7da10821ffc8bdb121fde.jpg" alt="Gaming Mouse">
+          <h3>Gaming Mouse</h3>
+          <p class="price">$39.99 <span class="old-price">$59.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/94/10/c2/9410c2c6354be4ab96a6adeb42b1a5d4.jpg" alt="Android Tablet">
+          <h3>Android Tablet</h3>
+          <p class="price">$249.99 <span class="old-price">$299.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/c1/1d/20/c11d206e3242c393f8d750ff247051af.jpg" alt="Powerbank">
+          <h3>Fast-Charge Powerbank</h3>
+          <p class="price">$29.99 <span class="old-price">$39.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/f6/35/83/f63583d164a40f9599cd0a62dae238bc.jpg" alt="USB Charger">
+          <h3>USB Wall Charger</h3>
+          <p class="price">$19.99 <span class="old-price">$25.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://i.pinimg.com/736x/5b/f6/63/5bf66305561d193f3e0062a2aea83837.jpg" alt="Laptop Stand">
+          <h3>Adjustable Laptop Stand</h3>
+          <p class="price">$34.99 <span class="old-price">$49.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
       </div>
     </div>
   </section>
@@ -84,16 +159,15 @@
     </div>
   </section>
 
- <!-- About -->
-<section id="about" class="about">
-  <div class="container">
-    <h2>About BuyHive</h2>
-    <p>
-      BuyHive is your one-stop online shop for high-quality electronics and gadgets at unbeatable prices. We focus on delivering great value, fast shipping, and excellent customer service to make your shopping experience easy and reliable.
-    </p>
-  </div>
-</section>
-
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About BuyHive</h2>
+      <p>
+        BuyHive is your one-stop online shop for high-quality electronics and gadgets at unbeatable prices. We focus on delivering great value, fast shipping, and excellent customer service to make your shopping experience easy and reliable.
+      </p>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="contact">
@@ -119,5 +193,28 @@
       <p>&copy; 2025 BuyHive. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Cart Notification -->
+  <div id="cart-message" class="cart-message">Added to cart ✅</div>
+
+  <!-- Script -->
+  <script>
+    let cartCount = 0;
+    const cartIcon = document.querySelector('.cart');
+    const cartMessage = document.getElementById('cart-message');
+
+    function addToCart() {
+      cartCount++;
+      cartIcon.innerText = `🛒 (${cartCount})`;
+
+      // Show notification
+      cartMessage.classList.add('show');
+      cartMessage.innerText = 'Added to cart ✅';
+
+      setTimeout(() => {
+        cartMessage.classList.remove('show');
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
