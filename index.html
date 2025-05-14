@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BuyHive | Smart Shopping Starts Here</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <style>html { scroll-behavior: smooth; }</style>
 </head>
 <body>
 
@@ -39,6 +35,20 @@
     </div>
   </section>
 
+  <!-- Categories Section -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <h2>Categories</h2>
+      <div class="category-list">
+        <div onclick="filterProducts('all')">All</div>
+        <div onclick="filterProducts('audio')">Audio Devices</div>
+        <div onclick="filterProducts('wearable')">Smart Wearables</div>
+        <div onclick="filterProducts('accessory')">Home Accessories</div>
+        <div onclick="filterProducts('gaming')">Gaming</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Products Section -->
   <section id="products" class="products">
     <div class="container">
@@ -46,115 +56,102 @@
       <div class="product-grid">
 
         <!-- 12 Product Cards -->
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/6e/4e/c7/6e4ec7c3423da88520dd758f38751937.jpg" style="height:400px; width:280px" alt="Wireless Headphones">
+        <div class="product-card audio">
+          <img src="https://i.pinimg.com/736x/c4/4b/c7/c44bc74a7c7697764d17a82ad9b92234.jpg" alt="Wireless Headphones">
           <h3>Wireless Headphones</h3>
           <p class="price">$99.99 <span class="old-price">$129.99</span></p>
           <button onclick="addToCart()">Add to cart</button>
           <button>Buy now</button>
         </div>
 
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/d5/38/d1/d538d17b7b6ea2130ceb006c4e117ed8.jpg" style="height:280px; width:280px" alt="Smart Watch">
+        <div class="product-card wearable">
+          <img src="https://i.pinimg.com/736x/4e/d4/39/4ed43922cd03453a6725cba11cce1cf7.jpg" alt="Smart Watch">
           <h3>Smart Watch</h3>
           <p class="price">$149.99 <span class="old-price">$179.99</span></p>
           <button onclick="addToCart()">Add to cart</button>
           <button>Buy now</button>
         </div>
 
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Qmx1ZXRvb3RoJTIwU3BlYWtlcnxlbnwwfHwwfHx8MA%3D%3D" style="height:280px; width:280px"alt="Bluetooth Speaker">
-          <h3>Bluetooth Speaker</h3>
-          <p class="price">$59.99 <span class="old-price">$89.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://media.istockphoto.com/id/153065264/photo/computer-keyboard-with-clipping-path.webp?a=1&b=1&s=612x612&w=0&k=20&c=wGLrPu5r7aB4Cs6-dlsXVxZFP54Fmxll-HUNF_0vnN4=" style="height:280px; width:400px" alt="Mechanical Keyboard">
-          <h3>Mechanical Keyboard</h3>
-          <p class="price">$79.99 <span class="old-price">$99.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/44/25/19/4425199bc98a240b6c82a6c6eadeab25.jpg" style="height:280px; width:280px" alt="Wireless Earbuds">
-          <h3>Wireless Earbuds</h3>
-          <p class="price">$49.99 <span class="old-price">$69.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/d8/58/36/d858362d6f9fa0b4a98bdade864f8cb5.jpg" style="height:400px; width:280px" alt="Action Camera">
-          <h3>Action Camera</h3>
-          <p class="price">$199.99 <span class="old-price">$249.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/c5/c1/69/c5c1691d093e20cd57700d5d6469d040.jpg" style="height:280px; width:280px" alt="LED Monitor">
-          <h3>LED Monitor</h3>
-          <p class="price">$179.99 <span class="old-price">$229.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/07/9a/ac/079aacbe7ee7da10821ffc8bdb121fde.jpg" style="height:280px; width:280px" alt="Gaming Mouse">
+        <div class="product-card gaming">
+          <img src="https://i.pinimg.com/736x/07/9a/ac/079aacbe7ee7da10821ffc8bdb121fde.jpg" alt="Gaming Mouse">
           <h3>Gaming Mouse</h3>
           <p class="price">$39.99 <span class="old-price">$59.99</span></p>
           <button onclick="addToCart()">Add to cart</button>
           <button>Buy now</button>
         </div>
 
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/94/10/c2/9410c2c6354be4ab96a6adeb42b1a5d4.jpg" style="height:300px; width:280px" alt="Android Tablet">
-          <h3>Android Tablet</h3>
-          <p class="price">$249.99 <span class="old-price">$299.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/c1/1d/20/c11d206e3242c393f8d750ff247051af.jpg" style="height:300px; width:280px" alt="Powerbank">
-          <h3>Fast-Charge Powerbank</h3>
-          <p class="price">$29.99 <span class="old-price">$39.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/f6/35/83/f63583d164a40f9599cd0a62dae238bc.jpg" style="height:280px; width:280px" alt="USB Charger">
-          <h3>USB Wall Charger</h3>
-          <p class="price">$19.99 <span class="old-price">$25.99</span></p>
-          <button onclick="addToCart()">Add to cart</button>
-          <button>Buy now</button>
-        </div>
-
-        <div class="product-card">
-          <img src="https://i.pinimg.com/736x/5b/f6/63/5bf66305561d193f3e0062a2aea83837.jpg" style="height:280px; width:280px" alt="Laptop Stand">
+        <div class="product-card accessory">
+          <img src="https://i.pinimg.com/736x/5b/f6/63/5bf66305561d193f3e0062a2aea83837.jpg" alt="Laptop Stand">
           <h3>Adjustable Laptop Stand</h3>
           <p class="price">$34.99 <span class="old-price">$49.99</span></p>
           <button onclick="addToCart()">Add to cart</button>
           <button>Buy now</button>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <div class="product-card audio">
+          <img src="https://images.unsplash.com/photo-1589256469067-ea99122bbdc4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bluetooth Speaker">
+          <h3>Bluetooth Speaker</h3>
+          <p class="price">$79.99 <span class="old-price">$99.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
 
-  <!-- Categories -->
-  <section id="categories" class="categories">
-    <div class="container">
-      <h2>Categories</h2>
-      <div class="category-list">
-        <div>Audio Devices</div>
-        <div>Smart Wearables</div>
-        <div>Home Accessories</div>
-        <div>Gaming</div>
+        <div class="product-card wearable">
+          <img src="https://i.pinimg.com/736x/8e/04/a8/8e04a89a7f7a4b30ac65e8da090fa844.jpg" alt="Fitness Band">
+          <h3>Fitness Band</h3>
+          <p class="price">$49.99 <span class="old-price">$69.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card gaming">
+          <img src="https://i.pinimg.com/736x/7d/39/39/7d3939a449d49568723455058462e0c3.jpg" alt="Gaming Keyboard">
+          <h3>Gaming Keyboard</h3>
+          <p class="price">$59.99 <span class="old-price">$89.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card accessory">
+          <img src="https://i.pinimg.com/736x/19/84/40/198440c7f3f6eac355a32738a7192b72.jpg" alt="LED Desk Lamp">
+          <h3>LED Desk Lamp</h3>
+          <p class="price">$24.99 <span class="old-price">$39.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card audio">
+          <img src="https://i.pinimg.com/736x/44/25/19/4425199bc98a240b6c82a6c6eadeab25.jpg" alt="Noise Cancelling Earbuds">
+          <h3>Noise Cancelling Earbuds</h3>
+          <p class="price">$119.99 <span class="old-price">$149.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card wearable">
+          <img src="https://i.pinimg.com/736x/d8/e2/41/d8e24126520f7ea920781dc3bb9fc15c.jpg" alt="VR Headset">
+          <h3>VR Headset</h3>
+          <p class="price">$199.99 <span class="old-price">$249.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card accessory">
+          <img src="https://i.pinimg.com/736x/14/e6/05/14e605dd4664a36aae8690a16c284962.jpg" alt="Smart Plug">
+          <h3>Smart Plug</h3>
+          <p class="price">$19.99 <span class="old-price">$29.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
+        <div class="product-card gaming">
+          <img src="https://i.pinimg.com/736x/ab/51/fb/ab51fb25bc5bf3fa1d1d11780a5b8737.jpg" alt="Game Controller">
+          <h3>Game Controller</h3>
+          <p class="price">$69.99 <span class="old-price">$89.99</span></p>
+          <button onclick="addToCart()">Add to cart</button>
+          <button>Buy now</button>
+        </div>
+
       </div>
     </div>
   </section>
@@ -163,9 +160,7 @@
   <section id="about" class="about">
     <div class="container">
       <h2>About BuyHive</h2>
-      <p>
-        BuyHive is your one-stop online shop for high-quality electronics and gadgets at unbeatable prices. We focus on delivering great value, fast shipping, and excellent customer service to make your shopping experience easy and reliable.
-      </p>
+      <p>BuyHive is your one-stop online shop for high-quality electronics and gadgets at unbeatable prices.</p>
     </div>
   </section>
 
@@ -194,7 +189,7 @@
     </div>
   </footer>
 
-  <!-- Cart Notification -->
+  <!-- Cart Message -->
   <div id="cart-message" class="cart-message">Added to cart ✅</div>
 
   <!-- Script -->
@@ -206,15 +201,18 @@
     function addToCart() {
       cartCount++;
       cartIcon.innerText = `🛒 (${cartCount})`;
-
-      // Show notification
       cartMessage.classList.add('show');
       cartMessage.innerText = 'Added to cart ✅';
+      setTimeout(() => cartMessage.classList.remove('show'), 2000);
+    }
 
-      setTimeout(() => {
-        cartMessage.classList.remove('show');
-      }, 2000);
+    function filterProducts(category) {
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        card.style.display = category === 'all' || card.classList.contains(category) ? 'block' : 'none';
+      });
     }
   </script>
+
 </body>
 </html>
